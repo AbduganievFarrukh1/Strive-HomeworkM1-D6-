@@ -106,17 +106,32 @@ console.log(splitResult);
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 const deleteOne=function(str){
-    
+    if(boolean=true)  
+    return str.slice(1, str.length)
+    if(boolean=false)
+    return str.slice(str.length -1)
 }
-
+console.log(deleteOne("Strive"))
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-
+let onlyLetters="I have 4 dogs"
+var withNoDigits = onlyLetters.replace(/[0-9]/g, '');
+console.log(withNoDigits );
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
+
+
+function isThisAnEmail(email) 
+    {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+    
+console.log(isThisAnEmail('strivegmail.com'));
+
 
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
