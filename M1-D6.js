@@ -136,6 +136,19 @@ console.log(isThisAnEmail('strivegmail.com'));
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
+const whatDayIsIt= new Array(7);
+whatDayIsIt[1] = 'Monday';
+whatDayIsIt[2] = 'Tuesday';
+whatDayIsIt[3] = 'Wednesday';
+whatDayIsIt[4] = 'Thursday';
+whatDayIsIt[5] = 'Friday';
+whatDayIsIt[6] = 'Saturday';
+whatDayIsIt[7] = 'Sunday' ;
+
+function returnDay(x){
+  return (x < 1) || (x > 8) ? null :whatDayIsIt[x];
+}
+console.log(returnDay(7));
 
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
