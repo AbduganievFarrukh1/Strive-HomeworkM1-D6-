@@ -161,6 +161,10 @@ console.log(returnDay(7));
     }
 */
 
+
+
+
+
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
@@ -168,7 +172,14 @@ console.log(returnDay(7));
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
-
+const isTodayMyBirthday=function(str2){
+   if (str2==24.07){
+   console.log(true + ' Today is your birthday')}
+   else{
+       console.log(false + "  No today is not your birthday")
+   }
+}
+isTodayMyBirthday(25.07)
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
 
