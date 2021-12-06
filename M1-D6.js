@@ -188,10 +188,22 @@ isTodayMyBirthday(25.07)
    and returns the given object after deleting its property named as the given string.
 */
 
+
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
+// const oldestMovie = [
+//     {name: 'historical', quantity: 10},
+//     {name: 'horror', quantity: 1},
+//     {name: 'comedy', quantity: 2},
+//     {name: 'Romance', quantity: 3},
+//     {name: 'Drama', quantity: 5}
+//  ];
+const oldestMovie = ['historical','horror','comedy', 'Drama',];
+const found = oldestMovie.find(element => element =='historical' );
+console.log("Oldest movie is " + found + "  movies.");
 
+//   console.log(oldestMovie.find(isCherries));
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
