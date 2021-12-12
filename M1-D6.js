@@ -114,11 +114,11 @@ console.log(withNoDigits );
 */
 
 
-function isThisAnEmail(email) 
-    {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(email);
-    }
+
+const isThisAnEmail = function (email) {
+  return email.indexOf("@") > 0 && email.indexOf(".") > 0;
+  // /^S+@\S+\.\S+$/.test()
+};
     
 console.log(isThisAnEmail('strivegmail.com'));
 
