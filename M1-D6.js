@@ -191,6 +191,17 @@ isTodayMyBirthday(25.07)
    Write a function called deleteProp which receives an object and a string as parameters,
    and returns the given object after deleting its property named as the given string.
 */
+const user = {
+  name: "Farruk",
+  surname: "Abduganiev"
+}
+
+const deleteProp = function (obj /* object */, prop /*string*/) {
+delete obj[prop];
+return obj;
+};
+
+let newuser = deleteProp(user, "surname")
 
 
 /* EXERCISE 12
