@@ -123,13 +123,15 @@ console.log(withNoDigits );
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
-
-function isThisAnEmail(email) 
-    {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(email);
-    }
-    
+// function isThisAnEmail(email) 
+//     {
+//         var re = /\S+@\S+\.\S+/;
+//         return re.test(email);
+//     }
+   
+const isThisAnEmail = function (email) {
+  return email.indexOf("@") > 0 && email.indexOf(".") > 0;
+}
 console.log(isThisAnEmail('strivegmail.com'));
 
 
