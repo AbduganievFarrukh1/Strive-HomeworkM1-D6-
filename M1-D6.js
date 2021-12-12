@@ -112,15 +112,7 @@ console.log(withNoDigits );
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
-
-<<<<<<< HEAD
-
-
-const isThisAnEmail = function (email) {
-  return email.indexOf("@") > 0 && email.indexOf(".") > 0;
-  // /^S+@\S+\.\S+$/.test()
-};
-    
+;  
 // function isThisAnEmail(email) 
 //     {
 //         var re = /\S+@\S+\.\S+/;
@@ -130,7 +122,6 @@ const isThisAnEmail = function (email) {
 const isThisAnEmail = function (email) {
   return email.indexOf("@") > 0 && email.indexOf(".") > 0;
 }
->>>>>>> f879f8a175298c9bc7a12626eeda78625ade1ae8
 console.log(isThisAnEmail('strivegmail.com'));
 
 
