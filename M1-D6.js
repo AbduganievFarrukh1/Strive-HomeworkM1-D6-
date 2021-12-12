@@ -71,24 +71,14 @@ console.log(dice(2))
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
 
+const whoIsBigger=function(num1,num2){
+    if(num1>=num2) 
+    return num1
+    if (num2>=num1)
+    return num2
+}
+console.log(whoIsBigger(2,8)+ " is bigger");
 
-
-
-
-// const whoIsBigger=function(num1,num2){
-//     if(num1>num2){
-//         return(num1 +"Bigger than "+ num2)
-//     }
-//    // console.log(num1 +"Bigger than "+ num2);
-// }
-// if(num2>num1){
-//     return(num2 +"Bigger than "+ num1)
-// }
-// //console.log(num2 +"Bigger than "+ num1);
-// else {
-//     console.log("There are equal!");
-// }
-// console.log(whoIsBigger(4,8))
 
 
 
@@ -116,7 +106,7 @@ console.log(deleteOne("Strive"))
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-let onlyLetters="I have 4 dogs"
+let onlyLetters="I have 4 dogs  44 ggg 424 "
 var withNoDigits = onlyLetters.replace(/[0-9]/g, '');
 console.log(withNoDigits );
 /* EXERCISE 6
@@ -161,7 +151,17 @@ console.log(returnDay(7));
     }
 */
 
+function rollTheDices(n){
+    let sum = 0
+    let value = []
+    for (let i = 1; i <= n; i++) {
+       const random = dice()
 
+       sum += random 
+}
+return sum
+}
+console.log(rollTheDices(3))
 
 
 
@@ -203,7 +203,6 @@ const oldestMovie = ['historical','horror','comedy', 'Drama',];
 const found = oldestMovie.find(element => element =='historical' );
 console.log("Oldest movie is " + found + "  movies.");
 
-//   console.log(oldestMovie.find(isCherries));
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
