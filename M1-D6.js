@@ -301,6 +301,15 @@ const searchByTitle = function (keyword) {
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
+function removeIndex(index) {
+  let result = [];
+  for (let i = 0; i < movies.length; i++) {
+      if (index !== i) {
+          result.push(movies[i]);
+      }
+  }
+  return result;
+}
 
 // [EXTRAS] JS Advanced
 
