@@ -207,17 +207,17 @@ let newuser = deleteProp(user, "surname")
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
-// const oldestMovie = [
-//     {name: 'historical', quantity: 10},
-//     {name: 'horror', quantity: 1},
-//     {name: 'comedy', quantity: 2},
-//     {name: 'Romance', quantity: 3},
-//     {name: 'Drama', quantity: 5}
-//  ];
-const oldestMovie = ['historical','horror','comedy', 'Drama',];
-const found = oldestMovie.find(element => element =='historical' );
-console.log("Oldest movie is " + found + "  movies.");
+const oldestMovie = function () {
+  let result = { Year: 2100 };
+  for (let i = 0; i < movies.length; i++) {
+    let currentYear = parseInt(movies[i].Year);
+    if (currentYear < result.Year) {
+      result = movies[i];
+    }
+  }
 
+  return result;
+};
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
