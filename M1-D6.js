@@ -163,6 +163,16 @@ console.log(rollTheDices(3))
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
 
+const howManyDays = function(selectedDate) {
+  let today = Date.now();
+  let selectedInMilliseconds = Date.parse(selectedDate) //ms
+  return Math.floor((today - selectedInMilliseconds) / (1000 * 60 * 60 * 24))
+};
+
+let date = howManyDays(("6 Jun 2002"))
+
+console.log(date)
+
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
