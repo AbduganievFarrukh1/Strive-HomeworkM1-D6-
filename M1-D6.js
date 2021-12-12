@@ -322,6 +322,16 @@ function removeIndex(index) {
   ***
 */
 
+const halfTree = function (height) {
+  for (let i = 0; i < height; i++) {
+    let toPrint = "";
+    for (let j = 0; j < i + 1; j++) {
+      toPrint += "*";
+    }
+    console.log(toPrint);
+  }
+};
+
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
   Example: 
